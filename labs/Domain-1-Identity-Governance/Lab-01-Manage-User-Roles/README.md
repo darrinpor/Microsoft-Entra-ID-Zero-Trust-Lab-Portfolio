@@ -169,26 +169,17 @@ Returned to the Administrator session, opened Chris Green's user profile, and se
 
 
 
-Attempted the bulk user creation workflow via a `.csv` file (`SC300BulkUser.csv`) under **Bulk operations** --> **Bulk create**.
+### Phase 3: Bulk Import & PowerShell Provisioning (Encountering Hurdles)
 
+1. Attempted the bulk user creation workflow via a `.csv` file (`SC300BulkUser.csv`) under **Bulk operations** --> **Bulk create**.
 
-
-
-> ⚠️ **My Learning Mistake / Hurdle:** I initially ran into trouble here because I had a typo in my domain name within the CSV file. The file wouldn't process correctly and failed to generate users because the UPN domain didn't match my active lab tenant domain. Once I opened the file in Notepad, corrected the domain name to match my `.onmicrosoft.com` tenant suffix, and re-uploaded it, the bulk job succeeded.
-
-> 
-
-> 
-
-
-
-
+> ⚠️ **Hurdle & Resolution:** Initial bulk import failed due to an `Invalid value specified for property 'mailNickname'` error in the CSV error log, alongside unverified UPN domain suffixes. Standardizing all `mailNickname` aliases to clean alphanumeric values and mapping UPNs to the verified tenant domain resolved the check. Furthermore, removing the duplicate `Chris Green` record (manually created in Task 1) allowed the bulk operation to hit a verified **100% Succeeded** status.
 
 2. Switched to PowerShell to practice automation. I ran into a couple of minor command typos while typing out parameters, which taught me to double-check syntax carefully.
 
 3. Installed and imported the Microsoft Graph module (`Install-Module Microsoft.Graph -Scope CurrentUser`), connected using `Connect-MgGraph -Scopes "User.ReadWrite.All"`, and verified existing users with `Get-MgUser`.
 
-
+4. Configured a password profile (`$PWProfile`) and successfully provisioned a new test user using the `New-MgUser` cmdlet with specific department and job title attributes.
 
 
 
@@ -282,15 +273,27 @@ Checked Chris Green's profile under **Users** --> **All users** to verify his **
 
 
 
-**Least Privilege Enforcement:** Demonstrates why accounts should not be created with permanent administrative rights. Granting Application Administrator only when needed limits the blast radius if an account is compromised.
+### 🛠️ Troubleshooting & Issue Remediation
 
+#### Issue 1: Bulk Operation Job Warning (`mailNickname` Validation Error)
+* **Symptom:** Initial bulk user import task flagged a `Failed` status within the Entra ID Bulk Operation Results log, despite accounts appearing in the active tenant directory.
+* **Root Cause Analysis:** Downloaded and inspected the bulk operation error CSV log. The audit trail identified a validation exception: `Invalid value specified for property 'mailNickname' of resource 'User'`. This was caused by non-alphanumeric formatting and strict character constraints enforced on the mail alias property.
+* **Resolution & Operational Strategy:** 
+  1. Standardized all alias values across the bulk template to clean, alphanumeric strings (removing unallowed characters, spaces, and special symbols in the `mailNickname` column).
+  2. Identified a potential UPN conflict with the manually created administrator test user (`Chris Green`) from Task 1. Removed the duplicate record from `SC300BulkUser.csv` to ensure batch integrity.
+  3. Re-uploaded the sanitized CSV payload. The bulk execution completed with a verified **100% Succeeded** status tile (`02-bulk-operation.png`).
 
+#### Issue 2: Custom Domain Suffix Rejection (UPN Namespace Constraints)
+* **Symptom:** Entra ID rejected user provisioning attempts referencing unverified tenant domains (e.g., `@contoso.com`).
+* **Root Cause Analysis:** Entra ID enforces identity namespace boundaries—User Principal Names (UPNs) must map to verified custom domain names or the default `*.onmicrosoft.com` tenant suffix.
+* **Resolution:** Re-mapped all user principal name suffixes in the bulk import template to match the active, verified tenant domain.
 
+---
 
-**Recovery Guardrails:** The soft-delete retention window provides a critical safety net against accidental deletions or malicious purging of administrative identities.
+### 🛡️ Core Security Controls
 
-
-
+* **Least Privilege Enforcement:** Demonstrates why accounts should not be created with permanent administrative rights. Granting Application Administrator only when needed limits the blast radius if an account is compromised.
+* **Recovery Guardrails:** The soft-delete retention window provides a critical safety net against accidental deletions or malicious purging of administrative identities.
 
 
 
