@@ -142,5 +142,5 @@ Configure tenant-level properties, establish custom subdomain namespace routing,
 
 ## 6. Rollback & Cleanup Procedures
 
-1. Maintained the updated tenant display name (`DarrinPor Enterprises`) and privacy configurations as baseline parameters required for subsequent Identity Governance labs[cite: 10, 12, 14].
+1. Maintained the updated tenant display name (`DarrinPor Enterprises`) and privacy configurations as baseline parameters required for subsequent Identity Governance labs.
 2. Verified that the custom subdomain entry remained intact without active DNS bindings to prevent routing interference.
