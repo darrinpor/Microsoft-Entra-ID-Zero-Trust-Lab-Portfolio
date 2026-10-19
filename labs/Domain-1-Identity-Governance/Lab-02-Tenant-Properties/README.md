@@ -111,19 +111,16 @@ Configure tenant-level properties, establish custom subdomain namespace routing,
 ### 📷 Evidence Screenshots
 
 #### 1. Tenant Properties & Identifier Overview
-
-
+![Tenant Properties Overview](screenshots/01-tenant-properties.png)
 *Figure 2.1: Entra ID Properties blade showing updated display name, immutable Tenant ID, and data location settings.*
 
 #### 2. Custom Subdomain Registration
-
-
-Figure 2.2: Microsoft 365 admin center confirming successful addition of the sales subdomain with an incomplete setup DNS status.
+![Custom Subdomain Registration](screenshots/02-custom-subdomain.png)
+*Figure 2.2: Microsoft 365 admin center confirming successful addition of the sales subdomain with an incomplete setup DNS status.*
 
 #### 3. Privacy Contact & Statement Integration
-
-
-Figure 2.3: Tenant properties displaying the configured Global Privacy Contact and Privacy Statement URL.
+![Privacy Compliance Settings](screenshots/03-privacy-compliance.jpg)
+*Figure 2.3: Tenant properties displaying the configured Global Privacy Contact and Privacy Statement URL.*
 
 ---
 
