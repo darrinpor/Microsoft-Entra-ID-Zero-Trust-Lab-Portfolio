@@ -119,7 +119,7 @@ Configure tenant-level properties, establish custom subdomain namespace routing,
 *Figure 2.2: Microsoft 365 admin center confirming successful addition of the sales subdomain with an incomplete setup DNS status.*
 
 #### 3. Privacy Contact & Statement Integration
-![Privacy Compliance Settings](screenshots/03-privacy-compliance.jpg)
+![Privacy Compliance Settings](screenshots/03-privacy-compliance.png)
 *Figure 2.3: Tenant properties displaying the configured Global Privacy Contact and Privacy Statement URL.*
 
 ---
