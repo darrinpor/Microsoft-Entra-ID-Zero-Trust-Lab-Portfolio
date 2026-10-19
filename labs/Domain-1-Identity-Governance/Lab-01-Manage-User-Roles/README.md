@@ -18,7 +18,7 @@ As I build my foundational skills for an Identity and Access Management (IAM) ro
 
 ### 🎯 Objective
 
-Execute core identity and access administration tasks within a Microsoft 365 Developer Tenant using the Microsoft Entra admin center, PowerShell, and CSV templates[cite: 1, 4, 6]. This lab focuses on creating user accounts, testing application administration rights, practicing bulk user provisioning, handling soft-delete recoveries, and assigning product licenses.
+Execute core identity and access administration tasks within a Microsoft 365 Developer Tenant using the Microsoft Entra admin center, PowerShell, and CSV templates. This lab focuses on creating user accounts, testing application administration rights, practicing bulk user provisioning, handling soft-delete recoveries, and assigning product licenses.
 
 
 
@@ -317,15 +317,3 @@ Navigated to **Identity** --> **Users** --> **All users**.
 
 
 3. Verified license allocations were released back into the tenant pool by checking the Microsoft 365 admin center billing blade.
-
-
-
-
-
-
-
-```
-
-
-
-``` 
