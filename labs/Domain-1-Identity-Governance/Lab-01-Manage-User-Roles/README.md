@@ -261,26 +261,16 @@ Checked Chris Green's profile under **Users** --> **All users** to verify his **
 
 
 #### 1. Application Administrator Role Assignment
-
-
-
+![Application Administrator Role Assignment](./screenshots/01-role-assignment.png)
 *Figure 1.1: Verification panel showing Chris Green assigned to the Application Administrator role with active scope.*
 
-
-
 #### 2. Bulk Operation Success Status
-
-
-
-*Figure 1.2: Bulk operation results tile confirming successful user batch generation after correcting the domain suffix.*
-
-
+![Bulk Operation Success Status](./screenshots/02-bulk-operation.png)
+*Figure 1.2: Bulk operation results tile confirming successful user batch generation after resolving the domain suffix error.*
 
 #### 3. License Propagation Check
-
-
-
-*Figure 1.3: User license blade confirming successful product assignment.*
+![License Propagation Check](./screenshots/03-license-propagation.png)
+*Figure 1.3: User license blade confirming successful active license propagation from Microsoft 365 Admin Center.*
 
 
 
