@@ -169,7 +169,6 @@ Returned to the Administrator session, opened Chris Green's user profile, and se
 
 
 
-### Phase 3: Bulk Import & PowerShell Provisioning (Encountering Hurdles)
 
 1. Attempted the bulk user creation workflow via a `.csv` file (`SC300BulkUser.csv`) under **Bulk operations** --> **Bulk create**.
 
