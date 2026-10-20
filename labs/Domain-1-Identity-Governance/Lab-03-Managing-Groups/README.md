@@ -50,35 +50,32 @@ In this lab, group management, group-based licensing, and dynamic membership gov
 ### Exercise 1 Screenshots
 
 #### `01-security-group-creation.png`
+![01 - Security Group Creation](./screenshots/01-security-group-creation.png)
 
 * **Visual Annotations & Highlights:**
-* **Red Box (Group Name):** Highlights group identifier **`sg-SC300-O365`**.
-* **Green Box (Selected Member):** Highlights user account **Delia Dennis** (`DeliaD@darrinporidentitylabs.onmicrosoft.com`) selected for initial group membership.
-
-
+  * **Red Box (Group Name):** Highlights group identifier `sg-SC300-O365`.
+  * **Green Box (Selected Member):** Highlights user account Delia Dennis (`DeliaD@darrinporidentitylabs.onmicrosoft.com`) selected for initial group membership.
 * **Technical Note:** Establishes the target security group used as the administrative container for group-based licensing.
 
 ---
 
 #### `02-group-license-assignment.png`
+![02 - Group License Assignment](./screenshots/02-group-license-assignment.png)
 
 * **Visual Annotations & Highlights:**
-* **Red Box (Header):** Confirms active group licensing blade for **`sg-SC300-O365 | Licenses`**.
-* **Red Box (Assigned Product):** Highlights **Office 365 E5 (no Teams)**.
-* **Green Arrow & Red Box (State/Services):** Points from the product name directly to **`Queued`** state and **`59/59`** enabled service plans.
-
-
+  * **Red Box (Header):** Confirms active group licensing blade for `sg-SC300-O365 | Licenses`.
+  * **Red Box (Assigned Product):** Highlights Office 365 E5 (no Teams).
+  * **Green Arrow & Red Box (State/Services):** Points from the product name directly to `Queued` state and `59/59` enabled service plans.
 * **Technical Note:** Demonstrates group-level license binding. Group-based licensing automatically assigns service plan claims to all existing and future members without direct administrative overhead.
 
 ---
 
 #### `03-licensed-office-portal.png`
+![03 - Licensed Office Portal](./screenshots/03-licensed-office-portal.png)
 
 * **Visual Annotations & Highlights:**
-* **Green Box (Identity Badge):** Highlights active session under **Delia Dennis** (`DD Work Delia`) at `m365.cloud.microsoft/apps`.
-* **Red Box (App Suite):** Outlines populated enterprise SaaS applications including Outlook, Word, Excel, PowerPoint, OneNote, OneDrive, and SharePoint.
-
-
+  * **Green Box (Identity Badge):** Highlights active session under Delia Dennis (`DD Work Delia`) at `m365.cloud.microsoft/apps`.
+  * **Red Box (App Suite):** Outlines populated enterprise SaaS applications including Outlook, Word, Excel, PowerPoint, OneNote, OneDrive, and SharePoint.
 * **Technical Note:** Verifies end-to-end cloud provisioning. The background group license assignment successfully granted the target user active access to the underlying SaaS application suite.
 
 ---
@@ -86,12 +83,11 @@ In this lab, group management, group-based licensing, and dynamic membership gov
 ### Exercise 2 Screenshot
 
 #### `04-m365-group-creation.png`
+![04 - M365 Group Creation](./screenshots/04-m365-group-creation.png)
 
 * **Visual Annotations & Highlights:**
-* **Red Boxes (Left Panel):** Highlights **Group type** set to **`Microsoft 365`** and **Group name** set to **`Northwest Sales`**.
-* **Red Box (Right Panel):** Outlines the selected member list containing custom accounts **Andre Lawson** and **Monica Thomson**.
-
-
+  * **Red Boxes (Left Panel):** Highlights Group type set to `Microsoft 365` and Group name set to `Northwest Sales`.
+  * **Red Box (Right Panel):** Outlines the selected member list containing custom accounts Andre Lawson and Monica Thomson.
 * **Technical Note:** M365 Groups establish automated lifecycle management and shared resources across linked Microsoft 365 workloads without requiring separate permissions management across Exchange and SharePoint.
 
 ---
@@ -99,25 +95,23 @@ In this lab, group management, group-based licensing, and dynamic membership gov
 ### Exercise 3 Screenshots
 
 #### `05-dynamic-group-creation.png`
+![05 - Dynamic Group Creation](./screenshots/05-dynamic-group-creation.png)
 
 * **Visual Annotations & Highlights:**
-* **Red Box (Header):** Highlights group blade **`SC300-myDynamicGroup | Dynamic membership rules`**.
-* **Red Box (Rule Syntax):** Highlights expression string `user.objectId -ne null`.
-
-
+  * **Red Box (Header):** Highlights group blade `SC300-myDynamicGroup | Dynamic membership rules`.
+  * **Red Box (Rule Syntax):** Highlights expression string `user.objectId -ne null`.
 * **Technical Note:** Configures the rule expression. Querying for non-null Object IDs instructs the Entra ID dynamic membership engine to evaluate all active user identities in the tenant.
 
 ---
 
 #### `06-dynamic-group-validation.png`
+![06 - Dynamic Group Validation](./screenshots/06-dynamic-group-validation.png)
 
 * **Visual Annotations & Highlights:**
-* **Red Box (Top Engine):** Outlines active rule syntax `user.objectId -ne null`.
-* **Red Box (User Results):** Outlines evaluation rows for custom accounts **Andre Lawson** (`AndreL@...`) and **Monica Thomson** (`MonicaT@...`).
-* **Green Arrows:** Points directly from each user name to their respective **green checkmark status icon**.
-
-
-* **Technical Note:** Confirms rule evaluation accuracy. Both test identities returned an **`In group`** status, validating attribute processing before saving the rule.
+  * **Red Box (Top Engine):** Outlines active rule syntax `user.objectId -ne null`.
+  * **Red Box (User Results):** Outlines evaluation rows for custom accounts Andre Lawson (`AndreL@...`) and Monica Thomson (`MonicaT@...`).
+  * **Green Arrows:** Points directly from each user name to their respective green checkmark status icon.
+* **Technical Note:** Confirms rule evaluation accuracy. Both test identities returned an `In group` status, validating attribute processing before saving the rule.
 
 ---
 
