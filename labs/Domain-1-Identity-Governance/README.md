@@ -1,6 +1,6 @@
 # Domain 1: Implement & Manage Identity Governance
 
-This domain covers identity lifecycle management, privileged access control, access reviews, and governance workflows inside **Microsoft Entra ID Governance**.
+This domain covers identity lifecycle management, tenant configuration, group-based licensing, and external collaboration workflows inside **Microsoft Entra ID**.
 
 ---
 
@@ -8,11 +8,10 @@ This domain covers identity lifecycle management, privileged access control, acc
 
 | Lab ID | Lab Name | Focus Area | Status |
 | :--- | :--- | :--- | :---: |
-| **Lab 01** | Privileged Identity Management (PIM) for Roles | Time-bound elevation, approval workflows, & MFA triggers | ⏳ Scheduled |
-| **Lab 02** | Entitlement Management & Access Packages | Multi-stage access packages, catalogs, & policy assignment | ⏳ Scheduled |
-| **Lab 03** | Access Reviews for Users & Groups | Recurring access certification for guest & internal users | ⏳ Scheduled |
-| **Lab 04** | Lifecycle Workflows & User Onboarding | Automating Joiner-Mover-Leaver (JML) processes via Graph | ⏳ Scheduled |
-| **Lab 05** | Terms of Use (ToU) Enforcement | Terms acceptance policies linked to Conditional Access | ⏳ Scheduled |
-| **Lab 06** | PIM for Groups & Privileged Access | Just-in-Time (JIT) group membership for governance | ⏳ Scheduled |
-| **Lab 07** | Custom Extension Lifecycle Actions | Triggering Logic Apps/Azure Functions from Lifecycle Workflows | ⏳ Scheduled |
-| **Lab 08** | Audit & Governance Reporting | Identity governance logs, KQL queries, & compliance tracking | ⏳ Scheduled |
+| **Lab 01** | Manage User Roles | Role assignments, custom roles, and administrative scopes | ✅ Complete |
+| **Lab 02** | Working with Tenant Properties | Tenant display names, privacy contacts, and identifying properties | ✅ Complete |
+| **Lab 03** | Assigning Licenses Using Group Membership | Automated license assignment via group-based mechanics | ✅ Complete |
+| **Lab 04** | Configure External Collaboration Settings | Cross-tenant access and B2B collaboration governance | ✅ Complete |
+| **Lab 05** | Add Guest Users to the Directory | Onboarding external guest accounts via bulk create and invites | ✅ Complete |
+| **Lab 06** | Add a Federated Identity Provider | Direct federation using external OIDC/OAuth 2.0 identity providers | ✅ Complete |
+| **Lab 07** | Add Hybrid Identity with Azure AD Connect | Implementing hybrid identity sync and directory synchronization | ⏳ Scheduled |
