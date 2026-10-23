@@ -1,13 +1,13 @@
-# Lab 06: Add a Federated Identity Provider
+# 🆔 Lab 06: Add a Federated Identity Provider
 
-## 1. Executive Summary & Objective
+## 📋 1. Executive Summary & Objective
 This lab implements B2B direct federation between **Microsoft Entra ID** and **Google Identity Services** using OpenID Connect (OIDC) / OAuth 2.0 standards. By configuring upstream OAuth app credentials, setting up OAuth redirect URIs, and authorizing developer credentials, external partners and vendor users can authenticate into organizational resources using their existing native Google accounts.
 
 In this scenario, a test external user (`External User` / `darrinpor.identitylabs@gmail.com`) was onboarded to demonstrate cross-domain single sign-on (SSO). Configuring direct federation eliminates the need for separate credential management or manual one-time passcode (OTP) verification emails, establishing a seamless authentication flow and enforcing Zero Trust cross-tenant identity boundary security.
 
 ---
 
-## 2. Architecture & Control Design
+## 🏗️ 2. Architecture & Control Design
 
 
 ```
@@ -34,8 +34,10 @@ v
 |   | External Identity Provider: Google (Configured)                                         |   |
 |   |  - Authorized Redirect URIs:                                                            |   |
 |   |    1. [https://login.microsoftonline.com](https://login.microsoftonline.com)                                                 |   |
-|   |    2. [https://login.microsoftonline.com/te/](https://login.microsoftonline.com/te/){Tenant-GUID}/oauth2/authresp                |   |
-|   |    3. [https://login.microsoftonline.com/te/](https://login.microsoftonline.com/te/){Tenant-Domain}/oauth2/authresp              |   |
+|   |    2. [https://login.microsoftonline.com/te/471d4677-22bd-4835-be02-403487c64c01/oauth2/](https://www.google.com/search?q=https://login.microsoftonline.com/te/471d4677-22bd-4835-be02-403487c64c01/oauth2/)  |   |
+|   |       authresp                                                                          |   |
+|   |    3. [https://login.microsoftonline.com/te/darrinporidentitylabs.onmicrosoft.com/](https://www.google.com/search?q=https://login.microsoftonline.com/te/darrinporidentitylabs.onmicrosoft.com/)       |   |
+|   |       oauth2/authresp                                                                   |   |
 |   +-----------------------------------+-----------------------------------------------------+   |
 |                                       |                                                         |
 |                                       v                                                         |
@@ -58,7 +60,7 @@ v
 
 ---
 
-## 3. Step-by-Step Implementation
+## ⚙️ 3. Step-by-Step Implementation
 
 ### Task 1: Configure Upstream OAuth Project in Google Cloud Console
 1. Signed into the Google Cloud Console (`https://console.developers.google.com`) using the primary administrator account.
@@ -72,7 +74,7 @@ v
    * **Authorized JavaScript origins:** `https://microsoftonline.com`
    * **Authorized redirect URIs:**
      * `https://login.microsoftonline.com`
-     * `https://login.microsoftonline.com/te/7c3bb536-b850-4ba5-a07e-01f91522e5cd/oauth2/authresp`
+     * `https://login.microsoftonline.com/te/471d4677-22bd-4835-be02-403487c64c01/oauth2/authresp`
      * `https://login.microsoftonline.com/te/darrinporidentitylabs.onmicrosoft.com/oauth2/authresp`
 5. Extracted and securely saved the generated **Client ID** and **Client Secret**.
 
@@ -98,32 +100,29 @@ v
 
 ---
 
-## 4. Verification & Audit Evidence
+## 📸 4. Verification & Audit Evidence
 
 ### 1. Google Provider Configuration in Entra ID
+
 * **File:** `01-google-federation-configured.png`
-* **Path:** `screenshots/01-google-federation-configured.png`
+* **Path:** `Lab-06-Add-a-Federated-Identity-Provider/screenshots/01-google-federation-configured.png`
 * **Visual Focus:** Outline the **Google** provider row in a **Red Box** and highlight the **Configured** status badge in a **Green Box**, confirming the upstream OAuth client binding.
 
-![Google Provider Configured](https://raw.githubusercontent.com/darrinpor/Microsoft-Entra-ID-Zero-Trust-Lab-Portfolio/main/labs/Domain-1-Identity-Governance/Lab-06-Add-a-Federated-Identity-Provider/screenshots/01-google-federation-configured.png)
-
 ### 2. Invited Federated Guest User Object
+
 * **File:** `02-google-guest-user-invited.png`
-* **Path:** `screenshots/02-google-guest-user-invited.png`
+* **Path:** `Lab-06-Add-a-Federated-Identity-Provider/screenshots/02-google-guest-user-invited.png`
 * **Visual Focus:** Outline the user account (`External User` / `darrinpor.identitylabs@gmail.com`) in a **Red Box** and highlight the **Guest** value under the **User type** column in a **Green Box**.
 
-![Invited Guest Object](https://raw.githubusercontent.com/darrinpor/Microsoft-Entra-ID-Zero-Trust-Lab-Portfolio/main/labs/Domain-1-Identity-Governance/Lab-06-Add-a-Federated-Identity-Provider/screenshots/02-google-guest-user-invited.png)
-
 ### 3. Successful Federated Sign-In & Portal Landing
-* **File:** `03-google-federated-signin-success.png`
-* **Path:** `screenshots/03-google-federated-signin-success.png`
-* **Visual Focus:** Highlight the active profile badge showing `darrinpor.identitylabs@gmail.com` in a **Green Box** and outline the address bar displaying `https://myapps.microsoft.com/` in a **Red Box**.
 
-![Federated Sign-In Success](https://raw.githubusercontent.com/darrinpor/Microsoft-Entra-ID-Zero-Trust-Lab-Portfolio/main/labs/Domain-1-Identity-Governance/Lab-06-Add-a-Federated-Identity-Provider/screenshots/03-google-federated-signin-success.png)
+* **File:** `03-google-federated-signin-success.png`
+* **Path:** `Lab-06-Add-a-Federated-Identity-Provider/screenshots/03-google-federated-signin-success.png`
+* **Visual Focus:** Highlight the active profile badge showing `darrinpor.identitylabs@gmail.com` in a **Green Box** and outline the address bar displaying `https://myapps.microsoft.com/` in a **Red Box**.
 
 ---
 
-## 5. Zero Trust & Security Analysis
+## 🔒 5. Zero Trust & Security Analysis
 
 | Security Control | Threat Mitigation & Risk Assessment |
 | --- | --- |
@@ -133,7 +132,7 @@ v
 
 ---
 
-## 6. Rollback & Cleanup
+## 🧹 6. Rollback & Cleanup
 
 To cleanly remove the B2B Google Federation testing artifacts and restore default tenant security configuration, execute the following portal or PowerShell cleanup steps:
 
@@ -156,7 +155,7 @@ To cleanly remove the B2B Google Federation testing artifacts and restore defaul
 
 ---
 
-## Troubleshooting Logs & Environmental Discrepancies
+## 📝 Troubleshooting Logs & Environmental Discrepancies
 
 * **Google Cloud Console UI Modernization:** The lab guide indicates navigating to the legacy "OAuth consent screen" to locate audience controls. In the updated Google Cloud Platform UI, these controls are under **Google Auth Platform**, split into **Branding**, **Audience**, and **Clients** tabs.
 * **Entra ID Provider Configuration Button:** Modernized Entra admin center interface replaces the historic `+ Google` top-level menu button with an inline **Configure** button adjacent to Google in the **All identity providers** list.
