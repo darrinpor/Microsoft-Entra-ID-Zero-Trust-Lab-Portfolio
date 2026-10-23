@@ -1,6 +1,6 @@
-# Domain 4: Plan & Implement Identity Synchronization & Security
+# Domain 4: Plan & Implement an Identity Governance Strategy
 
-This domain covers hybrid identity management, directory synchronization, bulk provisioning, and administrative units for scoped management.
+This domain covers entitlement management, terms of use, external user lifecycle management, access reviews, Privileged Identity Management (PIM), Kusto query log analysis, and identity secure score monitoring inside **Microsoft Entra ID Governance**.
 
 ---
 
@@ -8,10 +8,10 @@ This domain covers hybrid identity management, directory synchronization, bulk p
 
 | Lab ID | Lab Name | Focus Area | Status |
 | :--- | :--- | :--- | :---: |
-| **Lab 23** | Bulk User Provisioning via CSV | Administrative user creation & PowerShell Graph SDK | ⏳ Scheduled |
-| **Lab 24** | Dynamic User & Device Groups | Rule-based group membership using Entra ID attributes | ⏳ Scheduled |
-| **Lab 25** | Administrative Units (AUs) | Scoped administration and delegated permissions | ⏳ Scheduled |
-| **Lab 26** | Hybrid Identity (Entra Connect) | On-premises Active Directory sync architecture | ⏳ Scheduled |
-| **Lab 27** | Password Hash Sync (PHS) & Pass-Through | Authentication method deployment in hybrid setups | ⏳ Scheduled |
-| **Lab 28** | Custom Security Attributes | Attribute-based access control (ABAC) governance | ⏳ Scheduled |
-| **Lab 29** | Cross-Tenant Access & B2B Direct Connect | External collaboration & guest user access controls | ⏳ Scheduled |
+| **Lab 22** | Create and Manage a Catalog of Resources in Entitlement Management | Entitlement management catalogs, resource integration, and access package scoping | ⏳ Scheduled |
+| **Lab 23** | Add Terms of Use and Acceptance Reporting | Enforcing compliance terms and tracking user acceptance records | ⏳ Scheduled |
+| **Lab 24** | Manage the Lifecycle of External Users in Identity Governance | Automating external user cleanup and governance settings | ⏳ Scheduled |
+| **Lab 25** | Creating Access Reviews for Internal and External Users | Recurring access certification workflows for directory groups | ⏳ Scheduled |
+| **Lab 26** | Configure Privileged Identity Management for Entra ID Roles | Time-bound PIM elevations and approval settings for administrative roles | ⏳ Scheduled |
+| **Lab 27** | Microsoft Sentinel Kusto Queries for Microsoft Entra Data Sources | KQL log analysis, sign-in audit telemetry, and threat hunting | ⏳ Scheduled |
+| **Lab 28** | Monitor and Manage Security Posture with Identity Secure Score | Tracking identity security recommendations and improvement actions | ⏳ Scheduled |
