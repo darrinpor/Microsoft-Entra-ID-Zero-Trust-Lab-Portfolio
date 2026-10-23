@@ -103,22 +103,25 @@ v
 ## 📸 4. Verification & Audit Evidence
 
 ### 1. Google Provider Configuration in Entra ID
-
 * **File:** `01-google-federation-configured.png`
 * **Path:** `Lab-06-Add-a-Federated-Identity-Provider/screenshots/01-google-federation-configured.png`
 * **Visual Focus:** Outline the **Google** provider row in a **Red Box** and highlight the **Configured** status badge in a **Green Box**, confirming the upstream OAuth client binding.
 
-### 2. Invited Federated Guest User Object
+![Google Provider Configured](./screenshots/01-google-federation-configured.png)
 
+### 2. Invited Federated Guest User Object
 * **File:** `02-google-guest-user-invited.png`
 * **Path:** `Lab-06-Add-a-Federated-Identity-Provider/screenshots/02-google-guest-user-invited.png`
 * **Visual Focus:** Outline the user account (`External User` / `darrinpor.identitylabs@gmail.com`) in a **Red Box** and highlight the **Guest** value under the **User type** column in a **Green Box**.
 
-### 3. Successful Federated Sign-In & Portal Landing
+![Invited Guest Object](./screenshots/02-google-guest-user-invited.png)
 
+### 3. Successful Federated Sign-In & Portal Landing
 * **File:** `03-google-federated-signin-success.png`
 * **Path:** `Lab-06-Add-a-Federated-Identity-Provider/screenshots/03-google-federated-signin-success.png`
 * **Visual Focus:** Highlight the active profile badge showing `darrinpor.identitylabs@gmail.com` in a **Green Box** and outline the address bar displaying `https://myapps.microsoft.com/` in a **Red Box**.
+
+![Federated Sign-In Success](./screenshots/03-google-federated-signin-success.png)
 
 ---
 
