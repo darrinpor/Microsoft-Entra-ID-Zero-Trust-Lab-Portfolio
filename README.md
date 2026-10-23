@@ -28,8 +28,8 @@ This portfolio demonstrates practical competency in designing, implementing, and
 | :--- | :--- | :---: | :---: |
 | [**Domain 1: Identity Governance**](./labs/Domain-1-Identity-Governance/) | Core Identity, PIM, Entitlement Management, Access Reviews, Lifecycle Workflows, & Federation | Labs 01 – 07 | 🟡 In Progress |
 | [**Domain 2: Access Management**](./labs/Domain-2-Access-Management/) | MFA, Risk-based Conditional Access, FIDO2, Named Locations, & App SSO | Labs 08 – 16 | 🟡 In Progress |
-| [**Domain 3: Identity Protection**](./labs/Domain-3-Identity-Protection/) | Entra ID Protection, Risk Remediation, & Break-Glass Policies | Labs 17 – 22 | ⏳ Scheduled |
-| [**Domain 4: Identity Sync & Security**](./labs/Domain-4-Identity-Sync-And-Security/) | Hybrid Sync (Entra Connect), Bulk Provisioning, & Administrative Units | Labs 23 – 28 | ⏳ Scheduled |
+| [**Domain 3: Identity Protection**](./labs/Domain-3-Identity-Protection/) | Entra ID Protection, Risk Remediation, & Break-Glass Policies | Labs 17 – 21 | ⏳ Scheduled |
+| [**Domain 4: Identity Sync & Security**](./labs/Domain-4-Identity-Sync-And-Security/) | Hybrid Sync (Entra Connect), Bulk Provisioning, & Administrative Units | Labs 22 – 28 | ⏳ Scheduled |
 
 ---
 
