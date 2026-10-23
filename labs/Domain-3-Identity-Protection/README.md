@@ -1,6 +1,6 @@
-# Domain 3: Implement Identity Protection
+# Domain 3: Implement Access Management for Apps
 
-This domain covers risk detection, mitigation policies, and security operations inside **Microsoft Entra ID Identity Protection**.
+This domain covers application registration, enterprise app provisioning, managed identities, API permissions, conditional access for apps, and app governance inside **Microsoft Entra ID**.
 
 ---
 
@@ -8,9 +8,8 @@ This domain covers risk detection, mitigation policies, and security operations 
 
 | Lab ID | Lab Name | Focus Area | Status |
 | :--- | :--- | :--- | :---: |
-| **Lab 17** | User & Sign-in Risk Policies | Automating remediation based on risk telemetry | ⏳ Scheduled |
-| **Lab 18** | MFA & Password Reset Enforcement | User self-remediation via SSPR & MFA | ⏳ Scheduled |
-| **Lab 19** | Risk Investigation & Remediation | Analyzing risky users and high-risk sign-ins | ⏳ Scheduled |
-| **Lab 20** | Entra ID Protection Integration | Exporting risk logs & Security Copilot integration | ⏳ Scheduled |
-| **Lab 21** | Workload Identity Risk | Securing service principals & app registrations | ⏳ Scheduled |
-| **Lab 22** | Emergency Access ("Break-Glass") Accounts | Exclusion policies & monitoring break-glass logins | ⏳ Scheduled |
+| **Lab 17** | Defender for Cloud Apps Application Discovery and Enforcing Restrictions | Discovering shadow IT and enforcing cloud app security controls | ⏳ Scheduled |
+| **Lab 18** | Defender for Cloud Apps Access Policies | Controlling real-time session access and granular app policies | ⏳ Scheduled |
+| **Lab 19** | Register an Application | Registering custom multi-tenant/single-tenant apps and exposing APIs | ⏳ Scheduled |
+| **Lab 20** | Implement Access Management for Apps | Assigning users and groups to enterprise applications | ⏳ Scheduled |
+| **Lab 21** | Grant Tenant-Wide Admin Consent to an Application | Managing application permissions and evaluating admin consent workflows | ⏳ Scheduled |
