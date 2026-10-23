@@ -26,10 +26,10 @@ This portfolio demonstrates practical competency in designing, implementing, and
 
 | Domain Folder | Description | Labs Covered | Status |
 | :--- | :--- | :---: | :---: |
-| [**Domain 1: Identity Governance**](./labs/Domain-1-Identity-Governance/) | PIM, Entitlement Management, Access Reviews, & Lifecycle Workflows | Labs 01 – 08 | 🟡 In Progress |
-| [**Domain 2: Access Management**](./labs/Domain-2-Access-Management/) | Risk-based Conditional Access, FIDO2, Named Locations, & App SSO | Labs 09 – 16 | ⏳ Scheduled |
+| [**Domain 1: Identity Governance**](./labs/Domain-1-Identity-Governance/) | Core Identity, PIM, Entitlement Management, Access Reviews, Lifecycle Workflows, & Federation | Labs 01 – 07 | 🟡 In Progress |
+| [**Domain 2: Access Management**](./labs/Domain-2-Access-Management/) | MFA, Risk-based Conditional Access, FIDO2, Named Locations, & App SSO | Labs 08 – 16 | 🟡 In Progress |
 | [**Domain 3: Identity Protection**](./labs/Domain-3-Identity-Protection/) | Entra ID Protection, Risk Remediation, & Break-Glass Policies | Labs 17 – 22 | ⏳ Scheduled |
-| [**Domain 4: Identity Sync & Security**](./labs/Domain-4-Identity-Sync-And-Security/) | Hybrid Sync (Entra Connect), Bulk Provisioning, & Administrative Units | Labs 23 – 29 | ⏳ Scheduled |
+| [**Domain 4: Identity Sync & Security**](./labs/Domain-4-Identity-Sync-And-Security/) | Hybrid Sync (Entra Connect), Bulk Provisioning, & Administrative Units | Labs 23 – 28 | ⏳ Scheduled |
 
 ---
 
