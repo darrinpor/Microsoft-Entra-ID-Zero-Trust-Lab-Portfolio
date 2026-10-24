@@ -70,24 +70,24 @@ v
 
 ### 1. PIM Azure Resources Overview Dashboard
 - **File:** `lab11-01-pim-azure-resources.png`
-- **Path:** `Lab-11-Assign-Azure-Resource-Roles-in-Privileged-Identity-Management/assets/lab11-01-pim-azure-resources.png`
+- **Path:** `screenshots/lab11-01-pim-azure-resources.png`
 - **Visual Focus:** Outline the target scope **`Azure subscription 1 | Overview`** in a **Red Box** to confirm subscription-level management under PIM.
 
-![PIM Azure Resources Overview](./assets/lab11-01-pim-azure-resources.png)
+![PIM Azure Resources Overview](screenshots/lab11-01-pim-azure-resources.png)
 
 ### 2. Role and Member Assignment Mapping
 - **File:** `lab11-02-add-assignment-role-member.png`
-- **Path:** `Lab-11-Assign-Azure-Resource-Roles-in-Privileged-Identity-Management/assets/lab11-02-add-assignment-role-member.png`
+- **Path:** `screenshots/lab11-02-add-assignment-role-member.png`
 - **Visual Focus:** Outline the selected role **`API Management Service Contributor`** in a **Red Box** and highlight the selected member **`Omar Bennett`** in a **Green Box**.
 
-![Add Assignment Role and Member Selection](./assets/lab11-02-add-assignment-role-member.png)
+![Add Assignment Role and Member Selection](screenshots/lab11-02-add-assignment-role-member.png)
 
 ### 3. Eligible Governance Settings
 - **File:** `lab11-03-eligible-assignment-settings.png`
-- **Path:** `Lab-11-Assign-Azure-Resource-Roles-in-Privileged-Identity-Management/assets/lab11-03-eligible-assignment-settings.png`
+- **Path:** `screenshots/lab11-03-eligible-assignment-settings.png`
 - **Visual Focus:** Outline the **`Eligible`** radio button under Assignment type in a **Green Box** to confirm Just-In-Time role gating.
 
-![Eligible Assignment Settings](./assets/lab11-03-eligible-assignment-settings.png)
+![Eligible Governance Settings](screenshots/lab11-03-eligible-assignment-settings.png)
 
 ---
 
