@@ -132,5 +132,3 @@ To maintain tenant configuration hygiene and remove lab-specific risk policies, 
 - **Licensing Prerequisites:** Configuring user risk and sign-in risk conditions within Conditional Access requires active Microsoft Entra ID P2 licensing across evaluated accounts. Premium P2 capabilities enable real-time risk signal processing and adaptive grant controls.
 - **Automated Control Dependencies:** Selecting **Require risk remediation** within a user risk policy automatically mandates underlying MFA and sets session sign-in frequency to "Every time". This portal behavior aligns with Microsoft's enforcement baseline for high-risk identity containment.
 - **Break-Glass Exclusion Baseline:** Enterprise security best practice dictates excluding break-glass accounts from automated risk policies to prevent tenant lockout during widespread identity risk events or false-positive triggers.
-
-```
